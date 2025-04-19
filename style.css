@@ -1,0 +1,55 @@
+#product_container{
+
+height: 200px;
+width: 100%;
+   display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+.productcontainer1{
+
+    width: 150px;
+    height: 300px;
+    background-color: blanchedalmond;
+    margin: 6px;
+    border-radius: 4px;
+    
+    
+}
+
+.container{
+    display: flex;
+}
+
+.productadd{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    
+}
+
+
+.productminus{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.totalcontainer{
+    width: 100px;
+    height: 50px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 190px;
+}

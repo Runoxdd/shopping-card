@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+<div class="container">
+    <div class="productcontainer1">
+        <h1>Fanta 2$</h1>
+<div class="fanta_container" id="product_container">
+    <button class="productadd">+</button>
+    <button class="productminus">-</button>
+
+</div>
+    </div>
+
+
+    <div class="productcontainer1">
+        <h1>Coke 2$</h1>
+<div class="coke_container" id="product_container">
+    <button class="productadd">+</button>
+    <button class="productminus">-</button>
+
+    
+</div>
+    </div>
+
+
+    <div class="productcontainer1">
+        <h1>Sprite 2$</h1>
+<div class="sprite_container" id="product_container">
+    <button class="productadd">+</button>
+    <button class="productminus">-</button>
+
+    
+</div>
+     </div>
+
+
+
+     
+
+
+</div>
+
+<div class="totalsection">
+
+    <div class="totalcontainer">
+
+       <h1>$</h1> <h1 class="total">0</h1>
+     </div>
+</div>
+
+<script>
+
+
+    
+
+
+   let totalDisplay = document.getElementsByClassName('total')[0];
+   let total = 0;
+   let addButtons = document.getElementsByClassName('productadd')
+
+   for(i=0; i<addButtons.length; i++){
+ 
+   addButtons[i].addEventListener('click', function(){
+
+total += 2;
+totalDisplay.innerHTML = total;
+
+   })
+   }
+
+
+
+
+   let minusButtons = document.getElementsByClassName('productminus');
+
+   for(i=0; i<minusButtons.length; i++){
+
+   minusButtons[i].addEventListener('click', function(){
+
+   total -= 2;
+   totalDisplay.innerHTML = total;
+
+   })
+
+   }
+
+
+   
+
+
+
+   
+
+
+   
+
+
+</script>
+
+</body>
+</html>
